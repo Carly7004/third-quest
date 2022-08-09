@@ -14,6 +14,19 @@ function CreatingNew() {
     // setNote((current) => current + 1);
   };
 
+  function getLocation(){
+    try {
+      navigator.geolocation.getCurrentPosition(showPosition)
+    } catch {
+
+    }
+  }
+
+  const showPosition = (e) =>{
+    console.log('Latitude:' + e.coords.latitude)
+    console.log('Longitude:' + e.coords.longitude)
+  }
+
   console.log(note);
 
   return (
