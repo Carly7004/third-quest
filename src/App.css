@@ -1,0 +1,13 @@
+button {
+    border: none;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+}
+
+.button-on {
+    background: #0a0;
+}
+
+.button-off {
+    background: #a00;
+}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function LiftingState() {
   // const [Display, setDisplay] = useState(false);
   const [scifi, setScifi] = useState("science-fiction");
-  const [drama, setDrama] = useState("drama");
+  // const [drama, setDrama] = useState("drama");
   const [movieList, setMovieList] = useState([
     { title: "Avatar", genre: "science-fiction" },
     { title: "Black Swan", genre: "drama" },
@@ -12,9 +12,9 @@ function LiftingState() {
   ]);
 
   
-  const displayDrama = () => {
-    setDrama(!drama);
-  };
+  // const displayDrama = () => {
+  //   setDrama(!drama);
+  // };
 
   const displayScifi = () => {
     setScifi(!scifi);
@@ -22,9 +22,9 @@ function LiftingState() {
   return (
     <div>
       <h3>All movies</h3>
-      <button onClick={displayDrama}>
+      <button onClick={displayScifi}>
         Display Drama Movies:
-        {drama ? (
+        {!scifi ? (
           <div>
             <hr />
             {movieList
